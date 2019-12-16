@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6{
     width: 40px;
     height: 40px;
     font-size: 30px;
-    background: #45B39D;
+    background: rgb(60, 170, 148);
     text-align: center;
     line-height: 45px;
     border-radius: 5px;
@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6{
 .menu__link {
     display: block;
     padding: 20px;
-    background: #45B39D;
+    background: rgb(62, 179, 155);
     text-decoration: none;
     color: #fff;
 }
