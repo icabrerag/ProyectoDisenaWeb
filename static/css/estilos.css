@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6{
 .menu__link {
     display: block;
     padding: 20px;
-    background: #45B39D;
+    background: rgb(62, 179, 155);
     text-decoration: none;
     color: #fff;
 }
