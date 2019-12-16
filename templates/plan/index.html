@@ -1,0 +1,122 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="banner">
+    <img src="{% static 'img/index.jpg' %}" alt="" class="banner__img">
+    <div class="contenedor">
+        <h2 class="banner__titulo">COTIZACIONES WEB</h2>
+        <p> </p>
+        <p> </p>
+
+    </div>
+
+
+</div> 
+<main class="main">
+    <div class="contenedor">
+        <section class="info">
+            <article class="info__columna">
+                <img src="{% static 'img/responsive.jpg' %}" alt="" class="info_img">
+                <h2 class="info__titulo">Sistema Responsivo</h2>
+                <p class="info__txt">El diseño web responsive o adaptativo es una técnica de diseño web que busca la correcta visualización de una misma página en distintos dispositivos. Desde ordenadores de escritorio a tablets y móviles.</p>
+            </article>
+            <article class="info__columna">
+                <img src="{% static 'img/creamos.jpg' %}" alt="" class="info_img">
+                <h2 class="info__titulo">Tu lo Piensas Nosotros lo Creamos</h2>
+                <p class="info__txt">Imaginas una pagina web a tu gusto con todo lo que tu siempre soñaste. Contactanos Nosotros lo Creamos 
+                </p>
+            </article>
+            <article class="info__columna">
+                <img src="{% static 'IMG/curso.jpeg' %}" alt="" class="info_img">
+                <h2 class="info__titulo">Cursos</h2>
+                <p class="info__txt"> Tenemos cursos para que puedas aprender y quizas asi, puedas diseñar tu propia pagina web!!
+                </p>
+                
+            </article>
+        </section> 
+        <section class="cursos">
+            <h2 class="section__titulo">PLANES</h2>
+            <div class="cursos__columna">
+                <img src="{% static 'IMG/economico.jpg' %}" alt="" class="cursos__img">
+                <div class="cursos__descripcion">
+                    <h3 class="cursos__titulo">PLAN ECONOMICO</h3>
+                    <p class="cursos__txt">Si eres novato, quieres una pagina simple y no tienes mucho presupuesto, puedes optar por este plan donde te ofrecemos una pagina web donde puedes almacenar 2gb de información más hosting mensual.</p>
+                    <h1 class="valor__autos">Solo por $24.990</h1> 
+                    
+
+                </div>
+
+            </div>
+        </section>
+        <section class="cursos">
+                <h2 class="section__titulo"></h2>
+                <div class="cursos__columna">
+                    <img src="{% static 'IMG/empresa.jpg' %}" alt="" class="cursos__img">
+                    <div class="cursos__descripcion">
+                        <h3 class="cursos__titulo">PLAN EMPRESA</h3>
+                        <p class="cursos__txt">Perfecto para compartir tu emprendimiento al Internet. En este plan te ofrecemos 10gb de almacenamiento más el hosting mensual, además de mantenciones mensuales garantizadas para que no te quedes desactualizado.</p>
+                        <h1 class="valor__autos">Solo por $69.990</h1> 
+                        
+
+                    </div>
+
+                </div>
+            </section>
+            <section class="cursos">
+                    <h2 class="section__titulo"></h2>
+                    <div class="cursos__columna">
+                        <img src="{% static 'IMG/tienda.jpg' %}" alt="" class="cursos__img">
+                        <div class="cursos__descripcion">
+                            <h3 class="cursos__titulo">PLAN TIENDA</h3>
+                            <p class="cursos__txt">Colocamos tus productos en tu pagina y asi podras venderlos más rapidamente. Incluye un almacenamiento de 25gb, hosting mensual, mantenimiento semanal y publicidad para tu tienda</p>
+                            <h1 class="valor__autos">Solo por $124.990</h1> 
+                            
+    
+                        </div>
+    
+                    </div>
+            </section>
+            <section class="cursos">
+                    <h2 class="section__titulo">CURSOS</h2>
+                    <div class="cursos__columna">
+                        <img src="{% static 'IMG/design.jpg' %}" alt="" class="cursos__img">
+                        <div class="cursos__descripcion">
+                            <h3 class="cursos__titulo">CURSO DESIGN</h3>
+                            <p class="cursos__txt">¿Quieres aprender a diseñar una pagina web? Pues en este curso aprenderas lo que es una interfaz grafica y como construirla. 
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <h1>Valor Normal: $49.990</h1>
+                                <h1>Valor Intensivo: $69.990</h1> 
+                            </p>                                   
+                        </div>     
+                    </div>
+                </section>
+                <section class="cursos">
+                        <h2 class="section__titulo"></h2>
+                        <div class="cursos__columna">
+                            <img src="{% static 'IMG/html.jpg!d' %}" alt="" class="cursos__img">
+                            <div class="cursos__descripcion">
+                                <h3 class="cursos__titulo">CURSO HTML</h3>
+                                <p class="cursos__txt">¿Quieres aprender HTML? En este curso aprenderas la estructura basica del codigo de una pagina. 
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <h1>Valor Normal: $49.990</h1>
+                                    <h1>Valor Intensivo: $69.990</h1> 
+                                </p>                                   
+                            </div>     
+                        </div>
+                    </section>
+               
+    </div>
+  {% endblock %}    

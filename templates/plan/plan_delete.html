@@ -1,0 +1,23 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="banner">
+        <img src="{% static 'img/curso.jpeg' %}" alt="" class="banner__img">
+        
+    
+</div> 
+<div>
+    <H1>REGISTRAR  PLAN</H1>
+</div>
+<form method="post">
+    {% csrf_token %}
+    <h3>¿Desea eliminar el registro de {{ plan.modelo }}?</h3>
+
+    <button class="btn btn-danger" type="submit">Sí, eliminar</button>
+    <a class= "btn btn-default" href="/plan/eliminar/{{ planes.id }}">Cancelar</a>
+   
+    <button type="submit">Guardar</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="banner">
+        <img src="{% static 'img/listar.jpg' %}" alt="" class="banner__img">
+        
+    
+</div> 
+<div>
+    <H1>LISTADO DE PLANES</H1>
+</div>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>#</td>
+            <td>Plan</td>
+            <td>Curso</td>
+            <td>Tipo</td>
+            <td>Comprador</td>
+            <td>Acciones</td>
+        <tr>  
+
+    </thead>
+    <tbody>
+        {% if planes %}
+        {% for planes in planes %}
+        <tr>
+            <td>{{ planes.id }}</td>
+            <td>{{ planes.plan }}</td>
+            <td>{{ planes.curso }}</td>
+            <td>{{ planes.tipo }}</td>
+            <td>{{ planes.persona.nombre }} {{ plan.persona.apellidos }}</td>
+            <td>
+                <a class= "btn btn-primary" href="/plan/editar/{{ planes.id }}">Editar</a>
+                <a class= "btn btn-danger" href="/plan/eliminar/{{ planes.id }}">Eliminar</a>
+                
+            </td>
+        </tr>
+        {% endfor %}
+
+        {% else %}
+        <h1>No hay registro de planes</h1>
+
+        {% endif %}
+    </tbody>
+    
+
+{% endblock %}
+{%block footer %}
+
+{% endblock %}
